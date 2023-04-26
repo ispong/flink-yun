@@ -1,0 +1,25 @@
+dependencies {
+  implementation "org.apache.flink:flink-table-planner_${FLINK_SCALA_VERSION}:${FLINK_VERSION}"
+
+  implementation "org.apache.flink:flink-table-api-java-bridge_${FLINK_SCALA_VERSION}:${FLINK_VERSION}"
+
+  implementation "org.apache.flink:flink-yarn_${FLINK_SCALA_VERSION}:${FLINK_VERSION}"
+
+  implementation "org.apache.flink:flink-connector-jdbc_${FLINK_SCALA_VERSION}:${FLINK_VERSION}"
+
+  implementation "org.apache.flink:flink-connector-hive_${FLINK_SCALA_VERSION}:${FLINK_VERSION}"
+
+  implementation 'com.mysql:mysql-connector-j:8.0.32'
+
+  implementation "org.apache.hive:hive-common:${HIVE_VERSION}"
+
+  implementation "org.apache.hive:hive-exec:${HIVE_VERSION}"
+
+  implementation 'com.ververica:flink-connector-mysql-cdc:2.3.0'
+
+  implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.16.0'
+
+  implementation 'org.apache.logging.log4j:log4j-api:2.16.0'
+
+  implementation 'org.apache.logging.log4j:log4j-core:2.16.0'
+}

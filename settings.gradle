@@ -1,0 +1,3 @@
+rootProject.name = 'flink-yun'
+
+include 'flink-yun-plugins:flink-plugin-test'

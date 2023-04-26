@@ -1,0 +1,38 @@
+// 引入插件
+plugins {
+  id 'java'
+}
+
+// 从VERSION中获取版本号
+def version_number = new File(rootDir.getAbsolutePath(), 'VERSION').readLines()[0].trim()
+
+// 所有项目模块的配置
+allprojects {
+
+  // 声明插件
+  apply plugin: 'java-library'
+
+  // java环境配置，使用java1.8
+  sourceCompatibility = JavaVersion.VERSION_1_8
+  targetCompatibility = JavaVersion.VERSION_1_8
+
+  // 定义组织名称
+  group = 'com.isxcode.acorn'
+
+  // 定义版本号
+  version = version_number
+
+  // 配置多选中央仓库
+  repositories {
+    mavenLocal()
+    maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+    maven { url "https://plugins.gradle.org/m2/" }
+  }
+
+  // 配置基础依赖
+  dependencies {
+
+  }
+}
