@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!-- 官网标题 -->
+    <title>至流云</title>
+    <!-- 网站描述 -->
+    <meta name="description" content="基于flink打造超轻量级大数据平台">
+    <!-- seo关键字 -->
+    <meta name="keywords" content="flink,flink-yun,至流云">
+    <!-- 修改项目icon -->
+    <link rel="icon" href="https://img.isxcode.com/isxcode_img/isxcode/flink-yun%28%E5%B7%B2%E5%8E%BB%E5%BA%95%29.jpg">
+    <!-- 选择默认主题，任意选择一个 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+    <!-- 自定义样式，推荐样式 https://github.com/Netflix/pollyjs/blob/master/docs/assets/styles.css  -->
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- 在线编辑 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+</head>
+<body>
+<!-- 加载样式 -->
+<div id="app">
+    Please wait...
+</div>
+<script>
+    window.$docsify = {
+        // 配置项目名称
+        name: '至流云',
+        // 点击名称跳转
+        nameLink: '/',
+        // 主题色
+        themeColor: '#b064c0',
+        // logo
+        logo: 'https://img.isxcode.com/isxcode_img/isxcode/flink-yun%28%E5%B7%B2%E5%8E%BB%E5%BA%95%29.jpg',
+        // 路由地址
+        alias: {
+            '.*/_sidebar.md': '/zh-cn/_sidebar.md',
+            '.*/_navbar.md': '/zh-cn/_navbar.md',
+        },
+        // 加载侧边栏
+        loadSidebar: true,
+        // 加载nav栏
+        loadNavbar: true,
+        // 显示首页，需要配置_coverpage.md文件，参考 https://github.com/Netflix/pollyjs/blob/master/docs/_coverpage.md
+        coverpage: true,
+        // 最大子层级
+        subMaxLevel: 3,
+        // 最大父层级
+        maxLevel: 3,
+        // 路由模式 hash或者history
+        routerMode: 'history',
+        // 自动回到顶部
+        auto2top: true,
+        // 自动显示header
+        autoHeader: false,
+        // 首页不可滚动
+        onlyCover: true,
+        // 配置readme文件
+        homepage: '_homepage.md',
+        // 配置404页面, 需要配置 _404.md
+        notFoundPage: true,
+        // 仓库地址
+        repo: 'https://github.com/isxcode/flink-yun',
+        // 配置插件
+        plugins: [
+            // 在线编辑
+            EditOnGithubPlugin.create('https://github.com/ispong/spark-star/blob/main/docs/', null, 'Edit on github')
+        ],
+        // 全局搜索
+        search: {
+            placeholder: '搜索',
+            noData: '暂无结果',
+            namespace: '/zh-cn/',
+            hideOtherSidebarContent: true,
+        },
+        // 拷贝代码
+        copyCode: {
+            buttonText: 'Copy to clipboard',
+            errorText: 'Error',
+            successText: 'Copied'
+        },
+        // 上一页/下一页
+        pagination: {
+            previousText: 'PREVIOUS',
+            nextText: 'NEXT',
+            crossChapter: true,
+            crossChapterText: true,
+        },
+
+    }
+</script>
+<!-- Docsify v4 -->
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<!-- 全局搜索 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!-- 上一页/下一页 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<!-- 代码拷贝 -->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+<!-- 图片放大缩小 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+<!-- 代码块代码 -->
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-http.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-xml-doc.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-groovy.min.js"></script>
+
+</body>
+</html>
